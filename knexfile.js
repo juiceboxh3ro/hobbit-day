@@ -12,6 +12,7 @@ module.exports = {
       directory: "./data/seeds",
     },
   },
+
   testing: {
     client: "sqlite3",
     connection: {
@@ -30,7 +31,7 @@ module.exports = {
   production: {
     client: "pg", // npm i pg
     connection: {
-      filename: process.env.DATABASE_URL, // provided by Heroku
+      filename: "process.env.DATABASE_URL", // provided by Heroku
     },
     migrations: {
       directory: "./data/migrations",
